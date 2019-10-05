@@ -26,8 +26,8 @@ func Timestamp(ts *timestamp.Timestamp) time.Time {
 	return time.Unix(ts.Time, 0)
 }
 
-func FromTime(t time.Time) timestamp.Timestamp {
-	return timestamp.Timestamp{
+func FromTime(t time.Time) *timestamp.Timestamp {
+	return &timestamp.Timestamp{
 		Time: t.Unix(),
 	}
 }
