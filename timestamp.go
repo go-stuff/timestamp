@@ -5,7 +5,7 @@ package timestamp
 import (
 	"time"
 
-	"github.com/go-stuff/pb"
+	"github.com/go-stuff/timestamp/pb"
 )
 
 // Timestamp converts a google.protobuf.Timestamp proto to a time.Time.
