@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package timestamp;
 
+option go_package = "github.com/go-stuff/timestamp/pb/timestamp";
+
 message Timestamp {
     int64 time = 1;
 }
