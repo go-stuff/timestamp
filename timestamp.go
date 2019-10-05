@@ -5,7 +5,7 @@ package timestamp
 import (
 	"time"
 
-	"github.com/go-stuff/timestamp/pb"
+	"github.com/go-stuff/timestamp/pb/timestamp"
 )
 
 // Timestamp converts a google.protobuf.Timestamp proto to a time.Time.
@@ -19,7 +19,7 @@ import (
 //
 // A nil Timestamp returns an error. The first return value in that case is
 // undefined.
-func Timestamp(ts *pb.Timestamp) time.Time {
+func Timestamp(ts *timestamp.Timestamp) time.Time {
 	if ts == nil {
 		return time.Unix(0, 0)
 	}

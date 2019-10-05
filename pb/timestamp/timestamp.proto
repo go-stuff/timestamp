@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package pb;
+package timestamp;
 
 message Timestamp {
     int64 time = 1;
